@@ -1,0 +1,13 @@
+<app-toolbar></app-toolbar>
+
+<section>
+    <div class="container photos">
+        <h2>Photos from JSONPlaceholder</h2>
+        <ul class="container-photos">
+            <li class="container-list" *ngFor="let photo of photos">
+                <h3>{{ photo.title }}</h3>
+                <img [src]="photo.url" [alt]="photo.title">
+            </li>
+        </ul>
+    </div>
+</section>
