@@ -11,7 +11,7 @@
     gap: 20px;
     text-align: center;
     padding: 230px 20px;
-    max-width: 40%;
+    max-width: 45%;
     color: white;
 }
 
@@ -125,3 +125,73 @@
     padding: 20px;
     border-radius: 20px;
 }
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 500px) {
+
+    .container-use {
+        grid-template-columns: 1fr;
+    }
+
+    .all-resources {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CELULARES PEQUEÑOS  */
+
+@media screen and (max-width: 320px) {
+
+    .container-use h2 {
+        font-size: 30px;
+    }
+
+    .container-use {
+        padding: 50px 20px;
+    }
+
+    .use-text {
+        padding: 10px;
+    }
+
+    .use-text p {
+        font-size: 18px;
+    }
+
+    .img-use {
+        width: 150px;
+    }
+
+    .container-resources h2 {
+        font-size: 30px;
+    }
+
+    .all-resources {
+        padding: 10px 0;
+    }
+
+    .li-resources {
+        padding: 10px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    .container-routes {
+        padding: 20px;
+    }
+
+    .all-routes {
+        padding: 10px 0;
+    }
+
+    .li-routes {
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+    
+}
+

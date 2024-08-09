@@ -19,6 +19,7 @@
     padding: 10px 0; /* Ajusta según sea necesario */
 }
 
+
 .container-header h1, a {
     color: #fff;
 }
@@ -32,3 +33,173 @@
     gap: 20px;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.full-title {
+    display: block;
+}
+
+.short-title {
+    display: none;
+}
+
+
+.container-inicio {
+    background-image: url(../../../../assets/images/fondoInicio.png);
+    background-size: cover;
+    background-position: center;
+}
+.inicio {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    padding: 230px 20px;
+    max-width: 45%;
+    color: white;
+}
+
+.inicio h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600
+}
+
+.inicio p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.button-inicio {
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.button-inicio a {
+    color: white;
+}
+
+.button-inicio:hover {
+    background-color: #8b0000;
+}
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 1024px) {
+    .container-header {
+        max-width: 85%;
+    }
+    .inicio {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-header {
+        max-width: 90%;
+    }
+
+    .container-header h1 {
+        font-size: 1.5rem;
+    }
+    .inicio {
+        max-width: 80%;
+    }
+
+    .inicio h2 {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px; /* Debajo del header */
+        right: 10px;
+        background-color: #444;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .container-nav.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .container-header {
+        align-items: flex-start;
+    }
+
+    .inicio {
+        max-width: 100%;
+    }
+}
+
+/* CELULARES PEQUEÑOS  */
+
+@media (max-width: 365px) {
+    /* Oculta el título completo */
+    .full-title {
+        display: none;
+    }
+    /* Muestra el título reducido */
+    .short-title {
+        display: block;
+    }
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    .inicio p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container-header {
+        padding: 20px;
+    }
+
+    .container-nav {
+        top: 60px;
+    }
+
+    .inicio h2 {
+        font-size: 20px;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 200px) {
+    .inicio h2 {
+        font-size: small;
+    }
+
+    .inicio p {
+        font-size: small;
+    }
+
+    .container-inicio {
+        padding: 0;
+    }
+    
+}

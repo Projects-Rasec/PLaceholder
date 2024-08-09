@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './toolbar.component.css'
 })
 export class ToolbarComponent {
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }

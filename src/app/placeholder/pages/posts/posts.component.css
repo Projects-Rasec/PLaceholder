@@ -19,48 +19,7 @@
     padding: 20px;
 }
 
-/* INICIO */
 
-
-.container-inicio {
-    background-image: url(../../../../assets/images/fondoInicio.png);
-    background-size: cover;
-    background-position: center;
-}
-.inicio {
-    display: grid;
-    gap: 20px;
-    text-align: center;
-    padding: 230px 20px;
-    max-width: 40%;
-    color: white;
-}
-
-.inicio h2 {
-    text-align: center;
-    font-size: 60px;
-    font-weight: 600
-}
-
-.inicio p {
-    text-align: center;
-    font-size: 30px;
-}
-
-.button-inicio {
-    background-color: #40454a;
-    padding: 10px;
-    color: white;
-    border-radius: 10px;
-}
-
-.button-inicio a {
-    color: white;
-}
-
-.button-inicio:hover {
-    background-color: #8b0000;
-}
 
 /* CRUD */
 
@@ -85,5 +44,18 @@
   .container-crud > .response {
     grid-column: span 3; 
   }
-  
 
+
+  @media screen and (max-width: 768px) {
+    .container-posts {
+        grid-template-columns: 1fr;
+    }
+    .container-crud {
+        grid-template-columns: 1fr;
+    }
+
+    .container-crud > .response {
+        grid-column: unset;
+    }
+    
+  }
