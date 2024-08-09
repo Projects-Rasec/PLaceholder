@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2, h3, a, p, button  {
+    font-family: "Arvo", serif;
+    font-weight: 400;   
+    font-style: normal;
+}
+
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+textarea {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
