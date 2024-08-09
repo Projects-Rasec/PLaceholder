@@ -1,0 +1,89 @@
+.container-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.container-list {
+    display: grid;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* INICIO */
+
+
+.container-inicio {
+    background-image: url(../../../../assets/images/fondoInicio.png);
+    background-size: cover;
+    background-position: center;
+}
+.inicio {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    padding: 230px 20px;
+    max-width: 40%;
+    color: white;
+}
+
+.inicio h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600
+}
+
+.inicio p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.button-inicio {
+    background-color: #40454a;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.button-inicio a {
+    color: white;
+}
+
+.button-inicio:hover {
+    background-color: #8b0000;
+}
+
+/* CRUD */
+
+.container-crud {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 20px; 
+  }
+  
+  .container-crud > div {
+    background-color: #aeffd5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .container-crud > .response {
+    grid-column: span 3; 
+  }
+  
+

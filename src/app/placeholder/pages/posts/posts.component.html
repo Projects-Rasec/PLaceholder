@@ -1,13 +1,79 @@
-<div *ngIf="posts.length > 0">
+<app-toolbar></app-toolbar>
+
+<section id="inicio" class="container-inicio">
+    <div class="container inicio">
+        <h2>Que es JsonPlaceholder</h2>
+        <p>Es una herramienta para simular una API REST, proporcionando datos ficticios para pruebas y desarrollo.</p>
+        <a class="button-inicio" href="https://jsonplaceholder.typicode.com/" target="_blank">Mas info</a>
+    </div>
+</section>
+
+<section id="posts" class="container" *ngIf="posts.length > 0">
     <h2>Posts from JSONPlaceholder</h2>
-    <ul>
-      <li *ngFor="let post of posts">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.body }}</p>
-      </li>
+    <ul class="container-posts">
+        <li class="container-list" *ngFor="let post of posts">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.body }}</p>
+        </li>
     </ul>
-  </div>
-  <div *ngIf="posts.length === 0">
+</section>
+<div *ngIf="posts.length === 0">
     <p>Loading posts...</p>
-  </div>
-  
+</div>
+
+<section class="container">
+    <h2>Simulador CRUD</h2>
+    <div class="container-crud">
+        <div class="li-posts">
+            <h2>Create a New Post</h2>
+            <form (ngSubmit)="submitCreatePost()">
+              <div class="input">
+                <label for="title">Title:</label>
+                <input type="text" id="title" [(ngModel)]="createPost.title" name="title">
+              </div>
+              <div class="input">
+                <label for="body">Body:</label>
+                <textarea id="body" [(ngModel)]="createPost.body" name="body"></textarea>
+              </div>
+              <button class="button-inicio" type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="li-posts">
+            <h2>Delete posts</h2>
+            <form (ngSubmit)="deletePost(deletePostId.id)">
+              <div>
+                <label for="id">ID:</label>
+                <input type="number" id="id" [(ngModel)]="deletePostId.id" name="id">
+              </div>
+              <button class="button-inicio" type="submit">Delete</button>
+            </form>
+        </div>
+        
+        <div class="li-posts">
+            <h2>Update posts</h2>
+            <form (ngSubmit)="submitUpdatePost(updatePost.id)">
+              <div>
+                <label for="id">ID:</label>
+                <input type="number" id="id" [(ngModel)]="updatePost.id" name="id">
+              </div>
+              <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" [(ngModel)]="updatePost.title" name="title">
+              </div>
+              <div>
+                <label for="body">Body:</label>
+                <textarea id="body" [(ngModel)]="updatePost.body" name="body"></textarea>
+              </div>
+              <button class="button-inicio" type="submit">Update</button>
+            </form>
+        </div> 
+        
+        <div class="response" *ngIf="response">
+            <h3>Response:</h3>
+            <pre>{{ response | json }}</pre>
+        </div>
+    </div>
+    
+</section>
+
