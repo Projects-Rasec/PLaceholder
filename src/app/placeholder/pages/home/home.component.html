@@ -1,0 +1,94 @@
+<app-toolbar></app-toolbar>
+
+<section id="inicio" class="container-inicio">
+    <div class="container inicio">
+        <h2>Que es JsonPlaceholder</h2>
+        <p>Es una herramienta para simular una API REST, proporcionando datos ficticios para pruebas y desarrollo.</p>
+        <a class="button-inicio" href="https://jsonplaceholder.typicode.com/" target="_blank">Mas info</a>
+    </div>
+</section>
+
+<main class="main">
+    <section class="container container-use">
+        <div class="use-text">
+            <h2>¿Cuando usar?</h2>
+            <p>JSONPlaceholder es una API REST en línea gratuita que puedes usar siempre que necesites datos falsos . Puede estar en un README en GitHub, para una demostración en CodeSandbox, en ejemplos de código en Stack Overflow o simplemente para probar cosas localmente.</p>
+        </div>
+        <img class="img-use" src="assets/images/api.png" alt="api">
+    </section>
+    <section class="container container-resources">
+        <h2>Recursos</h2>
+        <p>JSONPlaceholder viene con un conjunto de 6 recursos comunes:</p>
+        <div class="all-resources">
+            <div class="li-resources">
+                <a href="https://jsonplaceholder.typicode.com/posts">/posts</a>
+                <p>100 publicaciones</p>
+                <img class="icon" src="assets/images/posts.png" alt="posts">
+            </div>
+            <div class="li-resources">
+                <a href="https://jsonplaceholder.typicode.com/comments">/comments</a>
+                <p>500 comentarios</p>
+                <img class="icon" src="assets/images/comment.png" alt="comment">
+            </div>
+            <div class="li-resources">
+                <a href="https://jsonplaceholder.typicode.com/albums">/albums</a>
+                <p>100 álbumes</p>
+                <img class="icon" src="assets/images/album.png" alt="album">
+            </div>
+            <div class="li-resources">
+                <a href="https://jsonplaceholder.typicode.com/photos">/photos</a>
+                <p>5000 fotos</p>
+                <img class="icon" src="assets/images/image.png" alt="photo">
+            </div>
+            <div class="li-resources">
+                <a href="https://jsonplaceholder.typicode.com/todos">/todos</a>
+                <p>200 tareas</p>
+                <img class="icon" src="assets/images/all.png" alt="all">
+            </div>
+            <div class="li-resources">
+                <a href="https://jsonplaceholder.typicode.com/users">/users</a>
+                <p>10 usuarios</p>
+                <img class="icon" src="assets/images/perfil.png" alt="perfil">
+            </div>
+        </div>
+    </section>
+
+    <section class="container container-routes">
+        <h2>Rutas</h2>
+        <p>Se admiten todos los métodos HTTP. Puede utilizar http o https para sus solicitudes.</p>
+        <div class="all-routes">
+            <div class="li-routes">
+                <h3>GET</h3>
+                <a href="https://jsonplaceholder.typicode.com/posts">/posts</a>
+            </div>
+            <div class="li-routes">
+                <h3>GET</h3>
+                <a href="https://jsonplaceholder.typicode.com/posts/1">/posts/1</a>
+            </div>
+            <div class="li-routes">
+                <h3>GET</h3>
+                <a href="https://jsonplaceholder.typicode.com/posts/1/comments">/posts/1/comments</a>
+            </div>
+            <div class="li-routes">
+                <h3>GET</h3>
+                <a href="https://jsonplaceholder.typicode.com/comments?postId=1">/comments?postId=1</a>
+            </div>
+            <div class="li-routes">
+                <h3>POST</h3>
+                <a>/posts</a>
+            </div>
+            <div class="li-routes">
+                <h3>PUT</h3>
+                <a>/posts/1</a>
+            </div>
+            <div class="li-routes">
+                <h3>PATCH</h3>
+                <a>/posts/1</a>
+            </div>
+            <div class="li-routes">
+                <h3>DELETE</h3>
+                <a>/posts/1</a>
+            </div>
+        </div>
+    </section>
+</main>

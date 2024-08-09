@@ -1,0 +1,127 @@
+/* INICIO */
+
+
+.container-inicio {
+    background-image: url(../../../../assets/images/fondoInicio.png);
+    background-size: cover;
+    background-position: center;
+}
+.inicio {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    padding: 230px 20px;
+    max-width: 40%;
+    color: white;
+}
+
+.inicio h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600
+}
+
+.inicio p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.button-inicio {
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.button-inicio a {
+    color: white;
+}
+
+.button-inicio:hover {
+    background-color: #8b0000;
+}
+
+/* WHEN TO USE  */
+
+.container-use {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 90px 20px;
+    font-size: 25px;
+}
+
+.container-use h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.use-text {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.img-use {
+    width: 200px;
+}
+
+/* RESOURCES */
+
+.container-resources {
+    font-size: 20px;
+    padding: 40px;
+    display: grid;
+}
+
+.container-resources h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+.all-resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.li-resources {
+    display: grid;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+
+}
+
+.icon {
+    width: 50px;
+}
+
+
+/* ROUTES  */
+
+
+.container-routes {
+    padding: 40px;
+}
+.all-routes {
+    display: grid;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.li-routes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+}
